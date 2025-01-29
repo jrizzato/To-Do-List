@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editar</title>
+</head>
+<body>
+    <h1>Editar tarea</h1>
+    <form action="{{ url_for('editar', index=index) }}" method="post">
+        <input type="text" name="tarea" id="tarea" value="{{ todo['tarea'] }}">
+        <button type="submit">Guardar cambios</button>
+</body>
+</html>

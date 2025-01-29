@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-To App</title>
+</head>
+<body>
+    <h1>Lista de tareas pendientes</h1>
+    <ul>{% for todo in todos %}
+            <li>
+                <form action="{{ url_for('check', index=loop.index0) }}" method="post" style="display:inline;">
+                    <input type="checkbox" name="hecho" onchange="this.form.submit()" {% if todo['hecho'] %} checked {% endif %}>
+                </form>
+                <span {% if todo['hecho'] %} style="text-decoration: line-through;" {% endif %}>{{ todo['tarea'] }}</span>
+                <a href="{{ url_for('editar', index=loop.index0) }}">Editar</a>
+                <a href="{{ url_for('eliminar', index=loop.index0) }}">Eliminar</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <form action="{{ url_for('agregar') }}" method="post">
+        <input type="text" name="tarea" id="tarea" placeholder="Escribe una tarea">
+        <button type="submit">Agregar tarea</button>
+</ul></body>
+</html>
