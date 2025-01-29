@@ -20,17 +20,21 @@ Esta es una aplicación web simple de lista de tareas pendientes construida con 
    ```sh
    git clone https://github.com/tu-usuario/to-do-list-app.git
    cd to-do-list-app
-    ```
+   ```
 2. Crea un entorno virtual e instala las dependencias:
+   ```sh
    python -m venv venv
    source venv/bin/activate  # En Windows usa `venv\Scripts\activate`
    pip install flask
+   ```
 
 ## Uso
 1. Ejecuta la aplicación:
+   ```sh
     python app.py
+    ```
 
-2. Abre tu navegador y ve a `http://127.0.0.1:5000
+2. Abre tu navegador y ve a `http://127.0.0.1:5000'
 
 ##Estructura del Proyecto
 
