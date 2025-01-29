@@ -36,7 +36,7 @@ Esta es una aplicación web simple de lista de tareas pendientes construida con 
 
 2. Abre tu navegador y ve a `http://127.0.0.1:5000'
 
-##Estructura del Proyecto
+## Estructura del Proyecto
 
 app.py: El archivo principal de la aplicación Flask.
 index.html: La plantilla HTML para la página principal.
