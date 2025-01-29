@@ -38,6 +38,6 @@ Esta es una aplicación web simple de lista de tareas pendientes construida con 
 
 ## Estructura del Proyecto
 
-app.py: El archivo principal de la aplicación Flask.
-index.html: La plantilla HTML para la página principal.
-editar.html: La plantilla HTML para la página de edición de tareas.
+* app.py: El archivo principal de la aplicación Flask.
+* index.html: La plantilla HTML para la página principal.
+* editar.html: La plantilla HTML para la página de edición de tareas.
